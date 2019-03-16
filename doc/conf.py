@@ -14,7 +14,6 @@
 
 import datetime
 import os
-import subprocess
 import sys
 from contextlib import suppress
 
@@ -26,13 +25,6 @@ allowed_failures = set()
 
 print("python exec:", sys.executable)
 print("sys.path:", sys.path)
-
-if "conda" in sys.executable:
-    print("conda environment:")
-    subprocess.run(["conda", "list"])
-else:
-    print("pip environment:")
-    subprocess.run(["pip", "list"])
 
 print(f"xarray: {xarray.__version__}, {xarray.__file__}")
 
