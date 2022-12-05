@@ -56,7 +56,7 @@ jobs:
         with:
           fetch-depth: 0 # Fetch all history for all branches and tags.
       - name: Set up conda environment
-        uses: mamba-org/provision-with-micromamba@de032af7fb3675649f3d4bbdda85178ba412ee41
+        uses: mamba-org/provision-with-micromamba@160ff6b6ef034a61d4459ed3bb69383a2f137ed6
         with:
           environment-file: ci/requirements/environment.yml
           environment-name: xarray-tests
