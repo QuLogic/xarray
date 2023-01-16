@@ -86,7 +86,7 @@ jobs:
           echo "PYTHON_VERSION=${{ matrix.python-version }}" >> $GITHUB_ENV
 
       - name: Setup micromamba
-        uses: mamba-org/provision-with-micromamba@de032af7fb3675649f3d4bbdda85178ba412ee41
+        uses: mamba-org/provision-with-micromamba@e2b397b12d0a38069451664382b769c9456e3d6d
         with:
           environment-file: ${{ env.CONDA_ENV_FILE }}
           environment-name: xarray-tests
